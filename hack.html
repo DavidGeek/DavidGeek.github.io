@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./hack_files/css/no_scroll.css" />
+<script>
+    $(document).ready(function () {
+
+        // you want to enable the pointer events only on click;
+
+        $('#map_canvas1').addClass('scrolloff'); // set the pointer events to none on doc ready
+        $('#canvas1').on('click', function () {
+            $('#map_canvas1').removeClass('scrolloff'); // set the pointer events true on click
+        });
+
+        // you want to disable pointer events when the mouse leave the canvas area;
+
+        $("#map_canvas1").mouseleave(function () {
+            $('#map_canvas1').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+        });
+    });
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1562995087250637&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<title>Pasir Ris East YEC</title>
+<link href="./hack_files/css/application-.css" media="all" rel="stylesheet" type="text/css">
+<script src="./hack_files/js/application-.js" type="text/javascript"></script>
+
+<link rel="stylesheet" id="coToolbarStyle" href="chrome-extension://mkfokfffehpeedafpekjeddnmnjhmcmk/toolbar/styles/placeholder.css" type="text/css"><script type="text/javascript" id="cosymantecbfw_removeToolbar">(function () {				var toolbarElement = {},					parent = {},					interval = 0,					retryCount = 0,					isRemoved = false;				if (window.location.protocol === 'file:') {					interval = window.setInterval(function () {						toolbarElement = document.getElementById('coFrameDiv');						if (toolbarElement) {							parent = toolbarElement.parentNode;							if (parent) {								parent.removeChild(toolbarElement);								isRemoved = true;								if (document.body && document.body.style) {									document.body.style.setProperty('margin-top', '0px', 'important');								}							}						}						retryCount += 1;						if (retryCount > 10 || isRemoved) {							window.clearInterval(interval);						}					}, 10);				}			})();</script><script type="text/javascript" id="waxCS">var WAX = function () { var _arrInputs; return { getElement: function (i) { return _arrInputs[i]; }, setElement: function(i){ _arrInputs=i; } } }(); function waxGetElement(i) { return WAX.getElement(i); } function coSetPageData(t, d){ if('wax'==t) { WAX.setElement(d);} }</script><script type="text/javascript" charset="UTF-8" src="./hack_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./hack_files/map.js"></script><script type="text/javascript" charset="UTF-8" src="./hack_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./hack_files/geometry.js"></script><script type="text/javascript" charset="UTF-8" src="./hack_files/directions.js"></script><script type="text/javascript" charset="UTF-8" src="./hack_files/marker.js"></script><script type="text/javascript" charset="UTF-8" src="./hack_files/infowindow.js"></script><script type="text/javascript" charset="UTF-8" src="./hack_files/onion.js"></script><script type="text/javascript" charset="UTF-8" src="./hack_files/controls.js"></script><script type="text/javascript" charset="UTF-8" src="./hack_files/stats.js"></script></head>
+<body class="hawaii" style="border: 1px solid transparent !important;">
+
+<header>
+
+<div class="cover_image" style="opacity: 0.9;"></div>
+  
+<div class="content">
+  
+  <img  src="./hack_files/w_v2-4f34521bd4c605060d2c343c202724ad.png" >
+    <h1>Pasir Ris  <span style="display:inline-block">East</span><br> Youth Executive Club</h1>
+    <h2>Join us.  Meet like-minded youths.  <span style="display:inline-block">Get involved in your community.</span></h2>
+    <button class="learn">Learn More</button>
+    <button class="apply">Enquiries</button>
+  </div>
+
+</header>
+
+<div class="flexCenter summary">
+  <h1>Join us in Pasir Ris East.  Meet awesome youths.</h1>
+
+  <p>Hi!  We're from Pasir Ris East Youth Executive Committee.  We conduct events and activities for all of the youths in the Pasir Ris East Community. </p>
+
+  <p>We support a variety of interest groups -  NERF Games, Board Games, Writing and Vangard Card Fight! We enjoy meeting up and interacting on a regular basis</p>
+
+  <p><span style="font-family:fakt_slab_medium">There is no obligation whatsoever!</span> You do not need to have any prior experience in organising events and activities. We just enjoy meeting awesome people and hope you have a great time.</p>
+
+</div>
+
+<!-- DC iOS Slider CSS -->
+<link rel="stylesheet" type="text/css" href="./hack_files/css/dc_ios.css" />
+<!-- Define image urls in dc_ios.css -->
+ 
+<!-- DC Javascript Library -->
+<script type="text/javascript" src="./hack_files/js/jquery.min.js"></script> <!-- jQuery Library (do not call twice on same page) -->
+<script type="text/javascript" src="./hack_files/js/jquery.easing.js"></script> <!-- jQuery Easing (do not call twice on same page) -->
+ 
+<!-- DC iOS Slider JS -->
+<script type="text/javascript" src="./hack_files/js/jquery.iosslider.js"></script>
+ 
+ 
+<!-- DC iOS Slider Settings -->
+<script type="text/javascript">
+    $(document).ready(function() {
+         
+        $('.iosSlider').iosSlider({
+            desktopClickDrag: true,
+            snapToChildren: true,
+            navSlideSelector: '.iossliderContainer .slideSelectors .item',
+            onSlideComplete: slideComplete,
+            onSliderLoaded: sliderLoaded,
+            onSlideChange: slideChange,
+            autoSlide: true, // auto slide on load
+            scrollbar: true, // show thin scrollbars
+            scrollbarContainer: '.iossliderContainer .scrollbarContainer',
+            scrollbarMargin: '0',
+            scrollbarBorderRadius: '0'
+        });
+         
+    });
+     
+    function slideChange(args) {
+     
+        $('.iossliderContainer .slideSelectors .item').removeClass('selected');
+        $('.iossliderContainer .slideSelectors .item:eq(' + args.currentSlideNumber + ')').addClass('selected');
+     
+    }
+     
+    function slideComplete(args) {
+             
+        $(args.sliderObject).find('.text1, .text2').attr('style', '');
+        $(args.currentSlideObject).find('.text1').animate({
+            right: '150px',
+            opacity: '0.8'
+        }, 400, 'easeOutQuint');
+        $(args.currentSlideObject).find('.text2').delay(200).animate({
+            right: '100px',
+            opacity: '0.8'
+        }, 400, 'easeOutQuint');
+    }
+     
+    function sliderLoaded(args) {
+        slideComplete(args);
+        slideChange(args);
+    }
+</script>
+ 
+ 
+<!-- DC iOS Slider Start -->
+<div style="width:100%; margin:0 auto; position:relative;max-width: 700px;min-height: 500px;"> <!-- define slider container width (strict enforce) -->
+<div class="fluidHeight">
+    <div class="iossliderContainer">
+        <div class="iosSlider">
+            <div class="slider">
+             
+                <!-- Slide 1 -->
+                <div class="item item1">
+                    <div class="inner">
+                        <div class="selectorShadow"></div>
+                    </div>
+                </div>
+                 
+                <!-- Slide 2 -->
+                <div class="item item2">
+                    <div class="inner">
+                        <div class="selectorShadow"></div>
+                    </div>
+                </div>
+                 
+                <!-- Slide 3 -->
+                <div class="item item3">
+                    <div class="inner">
+                        <div class="selectorShadow"></div>
+                    </div>
+                </div>
+                 
+                <!-- Slide 4 -->
+                <div class="item item4">
+                    <div class="inner">
+                        <div class="selectorShadow"></div>
+                    </div>
+                </div>
+                 
+                <!-- Slide 5 -->
+                <div class="item item5">
+                    <div class="inner">
+                        <div class="selectorShadow"></div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /iosSlider -->
+         
+        <!-- bullet selectors -->
+        <div class="slideSelectors">
+            <div class="item selected"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+         
+        <!-- horizontal scrollbars -->
+        <div class="scrollbarContainer"></div>
+         
+    </div> <!-- /iossliderContainer -->
+</div> <!-- /fluidHeight -->
+</div>
+<!-- DC iOS Slider End -->
+<div class="dc_clear"></div> <!-- line break/clear line -->
+	
+<!-- DC Parallax Slider CSS -->
+<link rel="stylesheet" type="text/css" href="./hack_files/css/dc_parallax.css" />
+ 
+<!-- DC Javascript Library -->
+ 
+<!-- DC Parallax Slider JS -->
+<script type="text/javascript" src="./hack_files/js/modernizr.custom.js"></script>
+<script type="text/javascript" src="./hack_files/js/jquery.cslider.js"></script>
+ 
+<!-- DC Parallax Slider Settings -->
+<script type="text/javascript">
+            $(function() {
+             
+                $('#da-slider').cslider({
+                    autoplay    : true, // auto play slider on load
+                    bgincrement : 450
+                });
+             
+            });
+</script>
+
+
+<!-- DC Parallax Slider Start -->
+<div style="width:100%; margin:0 auto; padding:0px; position:relative;"> <!-- define slider container width (strict enforce) -->
+<div id="da-slider" class="da-slider">
+     
+    <!-- Slide 1 -->
+    <div class="da-slide">
+        <h2>Apex Harmony Lodge Visits</h2>
+        <p>Volunteers to organise a get-together session with the Apex Harmony Lodge residents. Different performances will be arranged for the session by the volunteers.
+		Every quarterly, normally on a Saturday from 9a.m. to 1p.m. </p>
+		  
+        <a href="http://preyec.weebly.com/volunteering-program--opportunities.html" class="da-link"> Read more</a>
+        <div class="da-img"><img src="./hack_files/1.png" alt="image01" /></div>
+    </div>
+     
+    <!-- Slide 2 -->
+    <div class="da-slide">
+        <h2>Writting Interest Group</h2>
+        <p>Usually on a Sunday. 4-6 pm. Pasir Ris East CC </p>
+        <a href="https://www.facebook.com/groups/inkblots.pasir.ris.east/" class="da-link">Read more</a>
+        <div class="da-img"><img src="./hack_files/2.png" alt="image01" /></div>
+    </div>
+     
+    <!-- Slide 3 -->
+    <div class="da-slide">
+        <h2>Blood Donation/Salvation Army Donation Drive</h2>
+        <p>Volunteers to help with the registeration and logistics.</p>
+        <a href="http://preyec.weebly.com/volunteering-program--opportunities.html" class="da-link">Read more</a>
+        <div class="da-img"><img src="./hack_files/3.png" alt="image01" /></div>
+    </div>
+     
+    <!-- Slide 3 -->
+    <div class="da-slide">
+        <h2>Vangard Card Fighting Interest Group </h2>
+        <p>Every Sunday at 2pm at Pasir Ris East CC, Atlantis room, level 4. </p>
+        <a href="https://www.facebook.com/singapore.cardfight" class="da-link">Read more</a>
+        <div class="da-img"><img src="./hack_files/4.png" alt="image01" /></div>
+    </div>
+     
+    <!-- Slide 4 -->
+    <div class="da-slide">
+        <h2>Vangard Card Fighting Interest Group </h2>
+        <p>Every Sunday at 2pm at Pasir Ris East CC, Atlantis room, level 4. </p>
+        <a href="https://www.facebook.com/singapore.cardfight" class="da-link">Read more</a>
+        <div class="da-img"><img src="./hack_files/4.png" alt="image01" /></div>
+    </div>
+     
+    <!-- Slide 4 -->
+	
+     
+    <!-- navigation controls -->
+    <nav class="da-arrows">
+        <span class="da-arrows-prev"></span>
+        <span class="da-arrows-next"></span>
+    </nav>
+     
+</div> <!-- /da-slider -->
+</div>
+<!-- DC Parallax Slider End -->
+<div class="dc_clear"></div> <!-- line break/clear line -->
+
+<div class="dc_clear"></div> <!-- line break/clear line -->
+
+<div style="text-align: center;" class="apply-layer">
+<iframe src="https://www.google.com/calendar/embed?src=tohzkai%40gmail.com&ctz=Asia/Singapore"  style= "border: 0;" width="800" height="600" frameborder="0"  scrolling="no" ></iframe>
+</div>
+
+
+<section id="canvas1" class="map" >
+<iframe width="100%" height="450" frameborder="0" style="border:0; scrollwheel:false;" src="https://www.google.com/maps/embed/v1/place?q=Pasir%20Ris%20East%20Community%20Club%20Singapore&key=AIzaSyBHmBncUgv9OFC2HWKJaZs2LHQlNFpl4iY"></iframe>
+</section>
+</div>
+
+
+
+<div class="faq">
+
+
+<div class="flexCenterMed">
+
+
+  <h1 class="faq-title">FAQ</h1>
+
+
+ <div class="columns">
+    <div class="item">
+		
+      <h3>Where are our meetings held?</h3>
+      <p>Meetings are held monthly at one of the meeting rooms in Pasir Ris East Community Centre.</p>
+    </div>
+
+    
+
+    <div class="item">
+      <h3>What's the motivation? Are we paid to do this?</h3>
+      <p>No one pays us.  We like meeting and organising events for cool youths like you.</p>
+    </div>
+
+    <div class="item">
+      <h3>How can I get involved? </h3>
+      <p>By attending events hosted by us and volunteering to help out.</p>
+    </div>
+
+
+    <div class="item">
+      <h3>How do I propose and plan an event?</h3>
+      <p>You can plan and propose an event during one of our monthly meetings. </p>
+    </div>
+
+    <div class="item">
+      <h3>What type of events and activities can we propose?</h3>
+      <p>As long as it involves the community and it's healthy. </p>
+    </div>
+
+    <div class="item">
+      <h3>What is the eligibility for membership</h3>
+      <p>16~35 years old</p>
+    </div>
+
+
+
+    <div class="item">
+      <h3>How long is a term?</h3>
+      <p>The committee will change every two years after a bi-annual general meeting (BGM). </p>
+    </div>
+
+    <div class="item">
+      <h3>Are there any fees for joining? </h3>
+      <p>No. There are no fees for joining. </p>
+    </div>
+
+    <div class="item">
+      <h3>What is the application process like?</h3>
+      <p>If we have position available or we have any upcoming event, we'll notify you through phones or emails.</p>
+    </div>
+
+    <div class="item">
+      <h3>What kind of skills do I need to join?</h3>
+      <p>There is no red tape to who can join us. For as long as you are active, energetic and want to contribute to the community - we want you. </p>
+    </div>
+
+	<div class="item">
+      <h3>Seriously? This seems to good to be true.</h3>
+      <p>We like being around really interesting and motivated people, and if it's a good fit, we're confident things will just work out.  We don't like obligating anyone to do anything.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<!--FORM-->
+<div class="apply-layer">
+  <h1 class="scroll-apply">Enquiries</h1>
+  <h2>You'll hear back within a week.</h2>
+
+  <div class="flexCenterMed success_summary">
+
+      <div class="single_col">
+<form name="contactform" method="POST" action="send_form_email.php">
+<fieldset>
+    <legend>Personal Info</legend>
+   <div class="input string required"><label class="string required" for="user_first_name"><abbr title="required"></abbr> First Name</label><input class="string required" id="user_first_name" maxlength="255" name="first_name" placeholder="First Name" required="required" size="50" type="text"></div>
+	<div class="input string required"><label class="string required" for="user_last_name"><abbr title="required"></abbr> Last Name</label><input class="string required" id="user_last_name" maxlength="255" name="last_name" placeholder="Last Name" required="required" size="50" type="text"></div>
+   <div class="input string required"><label class="string required" for="user_email"><abbr title="required"></abbr> Email</label><input type="email" class="string required" id="user_email" maxlength="255" name="email" placeholder="Email" required="required" size="50"></div>
+	 <div class="input string required"><label class="string required" for="user_contact"><abbr title="required"></abbr> Contact</label><input type="integer" class="integer required" id="user_contact" maxlength="255" name="contact" placeholder="Contact" required="required" size="50"></div>
+	 <div class="input string required"><label class="string required" for="user_address"><abbr title="required"></abbr> Address</label><input type="string required" id="user_address" maxlength="255" name="address" placeholder="Address" required="required" size="50"></div>
+ <div style="color:orangered; font-weight:bold" class="signup_error"></div>
+
+</fieldset>
+<div class="input text required"><label class="text required"><abbr title="required"></abbr> Comments</label><textarea class="text required" id="user_comments" name="comments" cols="40" placeholder="Things that you would like to feedback about" required="required" rows="20"></textarea></div>
+<button type="submit" class="submit-form">Submit Application</button>
+</form>
+
+    </div>
+  </div>
+
+  <img class="preload" src="./hack_files/cover_s.jpg">
+</div>
+
+<!--FORM ENDS-->
+<div style="background:#34495e; width:100%; padding-top:30px; padding-bottom:30px; font-size:20px; color:white; text-align:center;">
+
+<br>
+<img  src="./hack_files/w_v2-4f34521bd4c605060d2c343c202724ad.png">
+</a>
+<br>
+<div class="fb-follow" data-href="https://www.facebook.com/pasirriseast.yec" data-width="200" data-height="58" data-colorscheme="dark" data-layout="standard" data-show-faces="true"></div>
+<p align="bottom"> 1 Pasir Ris Drive 4<br> Singapore 519457</p>
+</div>
+
+<script>
+  $(document).ready(function() {  
+
+    $('.preload').load(function() {  
+        $(".cover_image").css("opacity",.9);
+   });  
+    setTimeout('$(".cover_image").css("opacity",.9)',5000);
+  });
+
+    $(".learn").click(function() {
+      scrollToClass("summary")
+    });
+
+    $(".apply").click(function() {
+      scrollToClass("scroll-apply")
+    });
+
+function scrollToId(id){
+  $('html,body').animate({scrollTop: $("#"+id).offset().top - 10},'slow');
+}
+
+function scrollToClass(className){
+  $('html,body').animate({scrollTop: $("."+className).offset().top - 10},'slow');
+}
+
+</script>
+</div></body></html>
